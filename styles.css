@@ -161,6 +161,11 @@ a{text-decoration:none;color:inherit;}
 .section-sub{text-align:center;color:var(--gray);max-width:520px;margin:0 auto 40px;}
 .section-sub.light{color:rgba(255,255,255,0.85);}
 
+.screenshot-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1040px;margin:0 auto;}
+.hero-art .hero-screenshot{width:min(100%,260px);height:auto;border-radius:20px;box-shadow:var(--shadow);}
+.screenshot-card{margin:0;background:#fff;border-radius:var(--radius);padding:8px;box-shadow:var(--shadow);}
+.screenshot-card img{width:100%;height:auto;border-radius:14px;}
+
 .grid{display:grid;gap:24px;}
 .features-grid{grid-template-columns:1fr;}
 .pets-grid{grid-template-columns:repeat(2,1fr);}
@@ -255,6 +260,10 @@ a{text-decoration:none;color:inherit;}
   .contact-inner{flex-direction:row;justify-content:space-between;}
 
   .footer-inner{flex-direction:row;justify-content:space-between;}
+}
+
+@media (max-width:767px){
+  .screenshot-grid{grid-template-columns:1fr;max-width:420px;}
 }
 
 @media (min-width:1024px){
